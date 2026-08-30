@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Activity 1: Web Architecture & Semantic HTML5</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Web Architecture &amp; Semantic HTML5</h1>
+        <nav aria-label="Main navigation">
+            <a href="#architecture">Architecture</a>
+            <a href="#multimedia">Multimedia</a>
+            <a href="#form-section">Form Section</a>
+            <hr>
+        </nav>
+    </header>
+    <main>
+        <section id="architecture">
+            <h1>1. Web Architecture</h1>
+            <h2>Client-Server Model</h2>
+            <p>The client (your browser) sends a request, and the Server returns the web page response.</p>
+            <h2>DNS (Domain Name System)</h2>
+            <p>Translates human-friendly domain names (like example.com) into numeric IP address.</p>
+            <h2>HTTP vs HTTPS</h2>
+            <p>HTTP send data in plain text, while HTTPS enrcypts data securely using SSL/TLS.</p>
+            <hr>
+        
+        </section>
+        <section id="multimedia">
+            <h1>2. Multimedia</h1>
+            <p style="font-weight : bold;">Audio tag:</p>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            </audio>
+            <p style="font-weight : bold;">Video tag:</p>
+            <video width="400" height="225" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            </video>
+            <hr>
+        </section>
+        <section id="form-section">
+            <h1>3. HTML5 Forms and Validation</h1>
+            <form action="/submit" method="post">
+                <label for="Full Name (Required):">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="Email Address (Native Validation):">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="Which protocol uses encryption?">Which protocol uses encryption?</label><br><br>
+                <select>
+                    <option value="Select an option">-- Select an option --</option>
+                    <option value="http">HTTP</option>
+                    <option value="https">HTTPS</option>
+                </select><br><br>
+                <input type="submit" value="Submit">
+
+
+    </main>
+</body>
+</html>
